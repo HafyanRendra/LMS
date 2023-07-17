@@ -90,11 +90,11 @@ body {
     text-decoration: none;
 }
 
-.task-list-container {
+.book-list-container {
     padding: 20px;
 }
 
-.task-list-heading {
+.book-list-heading {
     color: #55c89f;
     margin-bottom: 60px;
 }
@@ -118,28 +118,38 @@ body {
     align-items: center;
 }
 
-.task-list-table-head {
+.book-list-table-head {
     display: flex;
     font-size: 24px;
     border-bottom: 1px solid #d8d8d8;
 }
 
-.task-list-header-task-name {
+.book-list-header-category {
     padding: 16px;
-    width: 15%;
+    width: 18%;
 }
 
-.task-list-header-detail {
-    padding: 16px;
-    width: 30%;
-}
-
-.task-list-header-due-date {
+.book-list-header-isbn {
     padding: 16px;
     width: 10%;
 }
 
-.task-list-header-progress {
+.book-list-header-title {
+    padding: 16px;
+    width: 30%;
+}
+
+.book-list-header-author {
+    padding: 16px;
+    width: 15%;
+}
+
+.book-list-header-publisher {
+    padding: 16px;
+    width: 15%;
+}
+
+.book-list-header-status {
     padding: 16px;
     width: 15%;
 }
@@ -152,8 +162,8 @@ body {
     position: relative;
 }
 
-.table-body-task-name {
-    width: 15%;
+.table-body-category {
+    width: 18%;
     padding: 16px;
     display: flex;
     align-items: center;
@@ -161,20 +171,32 @@ body {
     border-right: 1px solid #d8d8d8;
 }
 
-.table-body-detail {
-    width: 30%;
+.table-body-isbn {
+    width: 10%;
     padding: 16px;
     overflow-wrap: anywhere;
     border-right: 1px solid #d8d8d8;
 }
 
-.table-body-due-date {
-    width: 10%;
+.table-body-title {
+    width: 30%;
     padding: 16px;
     border-right: 1px solid #d8d8d8;
 }
 
-.table-body-progress {
+.table-body-author {
+    width: 15%;
+    padding: 16px;
+    border-right: 1px solid #d8d8d8;
+}
+
+.table-body-publisher {
+    width: 15%;
+    padding: 16px;
+    border-right: 1px solid #d8d8d8;
+}
+
+.table-body-status {
     width: 15%;
     padding: 16px;
 }
