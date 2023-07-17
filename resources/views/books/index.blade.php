@@ -25,6 +25,9 @@
           {{ $book->status}}</div>
         
         </div>
+        <div>
+          <a href="{{ route('books.edit', ['id' => $book->id])}}">Edit</a>
+        </div>
     @endforeach
   </div>
 </body>
