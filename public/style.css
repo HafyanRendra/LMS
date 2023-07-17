@@ -120,13 +120,13 @@ body {
 
 .book-list-table-head {
     display: flex;
-    font-size: 10px;
+    font-size: 15px;
     border-bottom: 1px solid #d8d8d8;
 }
 
 .book-list-header-category {
     padding: 16px;
-    width: 15%;
+    width: 10%;
 }
 
 .book-list-header-isbn {
@@ -136,34 +136,34 @@ body {
 
 .book-list-header-title {
     padding: 16px;
-    width: 30%;
+    width: 20%;
 }
 
 .book-list-header-author {
     padding: 16px;
-    width: 15%;
+    width: 10%;
 }
 
 .book-list-header-publisher {
     padding: 16px;
-    width: 15%;
+    width: 10%;
 }
 
 .book-list-header-status {
     padding: 16px;
-    width: 15%;
+    width: 8%;
 }
 
 .table-body {
     display: flex;
     align-items: center;
     border-bottom: 1px solid #d8d8d8;
-    font-size: 10px;
+    font-size: 15px;
     position: relative;
 }
 
 .table-body-category {
-    width: 18%;
+    width: 10%;
     padding: 16px;
     display: flex;
     align-items: center;
@@ -172,32 +172,32 @@ body {
 }
 
 .table-body-isbn {
-    width: 10%;
+    width: 8%;
     padding: 16px;
     overflow-wrap: anywhere;
     border-right: 1px solid #d8d8d8;
 }
 
 .table-body-title {
-    width: 30%;
+    width: 20%;
     padding: 16px;
     border-right: 1px solid #d8d8d8;
 }
 
 .table-body-author {
-    width: 15%;
+    width: 10%;
     padding: 16px;
     border-right: 1px solid #d8d8d8;
 }
 
 .table-body-publisher {
-    width: 15%;
+    width: 10%;
     padding: 16px;
     border-right: 1px solid #d8d8d8;
 }
 
 .table-body-status {
-    width: 15%;
+    width: 8%;
     padding: 16px;
 }
 

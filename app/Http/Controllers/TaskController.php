@@ -76,6 +76,12 @@ class TaskController extends Controller
         return view('books.index', ['pageTitle' => $pageTitle,'books' => $books]);
     }
 
+    public function create(){
+        $pageTitle = 'New Book';
+        $books = $this->books;
+        return view('Books.create', ['pageTitle' => $pageTitle, 'books'=>$books]);
+    }
+
     public function edit($id)
     {
         $pageTitle = 'Edit Book';

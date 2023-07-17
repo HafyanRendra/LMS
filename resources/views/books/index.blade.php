@@ -5,6 +5,14 @@
   <div class="book-list-container">
     <h1 class="book-list-heading">Book List</h1>
 
+    <div class="task-list-task-buttons">
+    <a href="{{ route('books.create') }}">
+      <button  class="book-list-button">
+        <span class="material-icons">add</span>New Book
+      </button>
+    </a>
+  </div>
+
     <div class="book-list-table-head">
       <div class="book-list-header-category">Category</div>
       <div class="book-list-header-isbn">ISBN</div>
