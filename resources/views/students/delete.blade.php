@@ -8,11 +8,11 @@
     <form
       class="form"
       method="POST"
-      action="{{ route('books.destroy', ['id' => $books->id]) }}"
+      action="{{ route('students.destroy', ['id' => $students->id]) }}"
     >
       @method('DELETE')
       @csrf
-      <p>You are going to delete<strong>"{{ $books->name }}"</strong></p>
+      <p>You are going to delete<strong>"{{ $students->name }}"</strong></p>
         <p>Are you sure?</p>
         <button
           type="submit"

@@ -10,8 +10,14 @@
       @csrf>
       <div class="form-item">
         <label>Category:</label>
-        <textarea
-          class="form-text-area" value="{{ old('category', $books->category) }}" name="category"></textarea>
+        <select class="form-input" type="text" name="category" value="{{ old('category', $books->category)}}">
+        <option value="Engineering">Engineering</option>
+        <option value="Mathematics">Mathematics</option>
+        <option value="Science and Technology">Science and Technology</option>
+        <option value="History">History</option>
+        <option value="IT programming">IT programming</option>
+        <option value="Politics">Politics</option>
+      </select>
         
       </div>
 

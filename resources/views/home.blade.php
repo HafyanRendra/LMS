@@ -13,10 +13,11 @@
         <a href="books.index" class="small-box-footer">More info<i class="fa fa-arrow-circle-right"></i></a>
       </div>
 
-      <div class="task-summary-list">
+        <div class="task-summary-list">
         <span class="material-icons">list</span>
         <h2>Total students</h2>
-      </div>
+        <a href="students.index" class="small-box-footer">More info<i class="fa fa-arrow-circle-right"></i></a>
+        </div>
 
       <div class="task-summary-list">
         <span class="material-icons">list</span>
