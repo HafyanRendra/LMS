@@ -27,3 +27,5 @@ Route::prefix('books')
     Route::get('{id}/edit','edit')->name('edit');
 });
 
+
+
