@@ -10,6 +10,7 @@
       <div  class="task-summary-list">
         <span class="material-icons">check_circle</span>
         <h2>Total books available</h2>
+        <a href="books.index" class="small-box-footer">More info<i class="fa fa-arrow-circle-right"></i></a>
       </div>
 
       <div class="task-summary-list">
