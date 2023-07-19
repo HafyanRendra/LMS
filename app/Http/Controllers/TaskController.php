@@ -29,6 +29,31 @@ class TaskController extends Controller
         return view('Books.create', ['pageTitle' => $pageTitle, 'books'=>$books]);
     }
 
+    public function store(Request $request)
+    {
+        $request->validate(
+            [
+            'isbn'=>'required',
+            'title'=>'required',
+            'author'=>'required',
+            'publisher'=>'required',
+            'status'=>'required',
+            ],
+            $request->all()
+        );
+
+        Book::create([
+            'category'=>$request->category,
+            'isbn'=>$request->isbn,
+            'title'=>$request->title,
+            'author'=>$request->author,
+            'publisher'=>$request->publisher,
+            'status'=>$request->status,
+        ]);
+        return redirect()->route('books.index');
+
+    }
+
     public function edit($id)
     {
         $pageTitle = 'Edit Book';
