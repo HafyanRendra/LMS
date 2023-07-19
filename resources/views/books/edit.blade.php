@@ -5,48 +5,50 @@
 @section('main')
   <div class="form-container">
     <h1 class="form-title">{{ $pageTitle }}</h1>
-    <form class="form">
+    <form class="form" method="POST" action="{{route('books.update',['id'=>$books->id])}}]">
+      @method('PUT')
+      @csrf>
       <div class="form-item">
         <label>Category:</label>
-        <input
-          class="form-input"
-          type="text"
-          value="{{ $book->category }}"
-        >
+        <textarea
+          class="form-text-area" value="{{ old('category', $books->category) }}" name="category"></textarea>
+        
       </div>
 
       <div class="form-item">
         <label>ISBN:</label>
-        <textarea class="form-text-area">{{ $book->isbn }}</textarea>
+        <textarea class="form-text-area" value="{{ old('isbn', $books->isbn) }}" name="isbn"></textarea>
       </div>
 
       <div class="form-item">
         <label>Title:</label>
-        <textarea class="form-text-area">{{ $book->title }}</textarea>
+        <textarea class="form-text-area" value="{{ old('title', $books->title) }}" name="title"></textarea>
       </div>
 
       <div class="form-item">
         <label>Author:</label>
-        <textarea class="form-text-area">{{ $book->author }}</textarea>
+        <textarea class="form-text-area" value="{{ old('author', $books->author) }}" name="author"></textarea>
       </div>
 
       <div class="form-item">
         <label>Publisher:</label>
-        <textarea class="form-text-area">{{ $book->publisher }}</textarea>
+        <textarea class="form-text-area" value="{{ old('publisher', $books->publisher) }}" name="publisher"></textarea>
       </div>
 
       <div class="form-item">
         <label>Status:</label>
         <select class="form-input">
-          <option @if($book->status == 'Available') selected @endif value="Available">
+        <option @if(old('status', $books->status) == 'not_started') selected @endif value="not_started">
+            Not Started
+          </option>
+          <option @if(old('status', $books->status) == 'available') selected @endif value="available">
             Available
           </option>
-          <option @if($book->status == 'Borrowed') selected @endif value="Borrowed">
-            Borrowed 
-          </option>
+          <option @if(old('status', $books->status) == 'borrowed') selected @endif value="borrowed">
+            Borrowed
         </select>
       </div>
-      <button type="button" class="form-button">Submit</button>
+      <button type="submit" class="form-button">Submit</button>
     </form>
   </div>
 @endsection
