@@ -94,7 +94,16 @@ body {
     padding: 20px;
 }
 
+.student-list-container {
+    padding: 20px;
+}
+
 .book-list-heading {
+    color: #55c89f;
+    margin-bottom: 60px;
+}
+
+.student-list-heading {
     color: #55c89f;
     margin-bottom: 60px;
 }
@@ -105,7 +114,17 @@ body {
     position: relative;
 }
 
+.student-list-student-buttons {
+    display: flex;
+    margin-bottom: 30px;
+    position: relative;
+}
+
 .task-list-task-buttons a {
+    text-decoration: none;
+}
+
+.student-list-student-buttons a {
     text-decoration: none;
 }
 
@@ -118,13 +137,34 @@ body {
     align-items: center;
 }
 
+.student-list-button {
+    padding: 16px;
+    font-size: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+
 .book-list-table-head {
     display: flex;
     font-size: 15px;
     border-bottom: 1px solid #d8d8d8;
 }
 
+.student-list-table-head {
+    display: flex;
+    font-size: 20px;
+    border-bottom: 1px solid #d8d8d8;
+}
+
 .book-list-header-category {
+    padding: 16px;
+    width: 10%;
+}
+
+.student-list-header-name {
     padding: 16px;
     width: 10%;
 }
@@ -134,7 +174,17 @@ body {
     width: 10%;
 }
 
+.student-list-header-student_id {
+    padding: 16px;
+    width: 10%;
+}
+
 .book-list-header-title {
+    padding: 16px;
+    width: 20%;
+}
+
+.student-list-header-course {
     padding: 16px;
     width: 20%;
 }
@@ -171,6 +221,15 @@ body {
     border-right: 1px solid #d8d8d8;
 }
 
+.table-body-name {
+    width: 10%;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    overflow-wrap: anywhere;
+    border-right: 1px solid #d8d8d8;
+}
+
 .table-body-isbn {
     width: 8%;
     padding: 16px;
@@ -178,7 +237,20 @@ body {
     border-right: 1px solid #d8d8d8;
 }
 
+.table-body-student_id {
+    width: 8%;
+    padding: 16px;
+    overflow-wrap: anywhere;
+    border-right: 1px solid #d8d8d8;
+}
+
 .table-body-title {
+    width: 20%;
+    padding: 16px;
+    border-right: 1px solid #d8d8d8;
+}
+
+.table-body-course {
     width: 20%;
     padding: 16px;
     border-right: 1px solid #d8d8d8;

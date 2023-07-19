@@ -26,7 +26,7 @@ class TaskController extends Controller
     public function create(){
         $pageTitle = 'New Book';
         $books = $this->books;
-        return view('Books.create', ['pageTitle' => $pageTitle, 'books'=>$books]);
+        return view('books.create', ['pageTitle' => $pageTitle, 'books'=>$books]);
     }
 
     public function store(Request $request)
@@ -65,8 +65,8 @@ class TaskController extends Controller
     public function update(Request $request, $id)
     {
        // dd($request->all());
-        $Books = Book::find($id);
-        $Books->update([
+        $books = Book::find($id);
+        $books->update([
             'category'=>$request->category,
             'isbn'=>$request->isbn,
             'title'=>$request->title,
