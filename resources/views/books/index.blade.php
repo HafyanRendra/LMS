@@ -35,6 +35,7 @@
         </div>
         <div>
           <a href="{{ route('books.edit', ['id' => $book->id])}}">Edit</a>
+          <a href="{{ route('books.delete', ['id' => $book->id]) }}">Delete</a>
         </div>
     @endforeach
   </div>
